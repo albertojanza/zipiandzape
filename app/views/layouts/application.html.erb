@@ -1,14 +1,48 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-  <title>Zipiandzape</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title><%= yield :head_title %></title>
+    <meta name="description" content="<%= yield :head_description %>">
+    <%= stylesheet_link_tag :all %>
+    <%= stylesheet_link_tag 'screen' %>
+    <%= javascript_include_tag :defaults %>
 </head>
+
 <body>
 
-<%= yield %>
+<div class="wrapper">
+    <div class="header">
+        <div>
+            <div id="logo">
+            <%= link_to image_tag("wedding_logo.png", :alt => "Tu boda"), root_path  %>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="wrapper">
+        <ul class="header_line">
+                    <li>  
+                        <%= link_to "home", root_path %>
+                    </li>
+        </ul>
+    </div>
+
+<div class="wrapper">
+    <div class="container_service">
+    <!--div class="container_service_border_left"></div-->
+        <div class="service" id="service" > 
+            <%= yield %>
+        </div>
+        </div>
+    <!--div class="container_service_border_right"></div-->
+    </div>
+</div>
+
 
 </body>
 </html>
+

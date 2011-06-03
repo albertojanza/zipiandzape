@@ -1,0 +1,21 @@
+/* LAYOUT width */
+div.wrapper{width:960px; margin: 0px auto;}
+
+/* head*/
+div.header{height:80px;background:url('images/wedding_line.png');  }
+div#logo{}
+
+/* menu */
+ul.header_line { height:40px;list-style-image: none; list-style-type: none; }
+ul.header_line li {float: left; margin: 10px 3px 0px 10px; padding: 0px;}
+ul.header_line li a {font-size: 1.5em;color:pink;font-weight:bold;text-decoration:none}
+ul.header_line li a:hover {color:yellow;}
+
+/*service*/
+div.container_service{min-height:450px;}
+div.service{padding:2px; }
+
+div.container_service_border_left{background:url('images/subheader_border_left.png'); height:900px; width:18px;float:left}
+div.container_service_border_right{background:url('images/subheader_border_right.png'); height:900px; width:18px;float:left}
+
+
