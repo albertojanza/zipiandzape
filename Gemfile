@@ -10,6 +10,8 @@ gem 'haml'
 
 gem 'mysql2'
 
+gem 'rails_config'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
