@@ -1,0 +1,8 @@
+- begin
+  - @news.each do |feed|
+    = link_to(feed.title,feed.link)
+    %br
+    = feed.description
+    %br
+    %br 
+- rescue
