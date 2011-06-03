@@ -7,6 +7,10 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'haml'
+# The Haml/Slim view generators were removed from Devise 1.2: 
+# For generation haml views see https://github.com/plataformatec/devise/wiki/How-To:-Create-Haml-and-Slim-Views
+gem 'hpricot'
+gem 'ruby_parser'
 
 gem 'mysql2', '< 0.3'
 
