@@ -1,0 +1,3 @@
+rss:
+  feed: 'http://www.especialbodas.com/noticias.xml'
+  max_news: 4
