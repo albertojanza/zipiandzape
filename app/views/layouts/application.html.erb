@@ -13,22 +13,53 @@
 
 <body>
 
+
+<div class="wrapper_with_wings">
 <div class="wrapper">
     <div class="header">
-        <div>
+        <div class="header_top">
             <div id="logo">
-            <%= link_to image_tag("wedding_logo.png", :alt => "Tu boda"), root_path  %>
+            <%= link_to image_tag("wedding_logo1.png", :alt => "Tu boda"), root_path  %>
             </div>
         </div>
-    </div>
-</div>
-
-    <div class="wrapper">
-        <ul class="header_line">
-                    <li>  
-                        <%= link_to "home", root_path %>
-                    </li>
+        <ul class="menu">
+            <li>  
+                <%= link_to "Home", root_path %>
+            </li>
+            <li class="select">  
+                <%= link_to "Tu boda", root_path %>
+            </li>
+            <li>  
+                <%= link_to "Regalos", root_path %>
+            </li>
+            <li>  
+                <%= link_to "Vestidos", root_path %>
+            </li>
+            <li>  
+                <%= link_to "Lugares", root_path %>
+            </li>
+            <li>  
+                <%= link_to "Viajes", root_path %>
+            </li>
+            <li>  
+                <%= link_to "Música", root_path %>
+            </li>
         </ul>
+        <div id="google_search_menu">
+            <%= form_tag '/', {:onSubmit => 'return GoogleSearch(); return false;'} do -%>
+                <%= text_field_tag 'q','', :size => 28 %>
+              <%= submit_tag I18n.t "google_search_button" %>
+            <% end -%>
+        </div>
+
+      <div class="cleaner"></div>
+    </div>
+    </div>
+    </div>
+
+      <div class="header_bottom_shadow"></div>
+<div class="wrapper">
+    </div>
     </div>
 
 <div class="wrapper">
@@ -39,6 +70,27 @@
         </div>
         </div>
     <!--div class="container_service_border_right"></div-->
+    </div>
+</div>
+<div id="bottom">
+<div class="wrapper">
+        <ul class="bottom-options">
+            <li>  
+                <%= link_to "Sobre nosotros", root_path %>
+            </li>
+            <li class="select">  
+                <%= link_to "Mapa Web", root_path %>
+            </li>
+            <li>  
+                <%= link_to "Contacta", root_path %>
+            </li>
+            <li>  
+                <%= link_to "Derechos", root_path %>
+            </li>
+            <li>  
+                <%= link_to "Términos de servicio", root_path %>
+            </li>
+        </ul>
     </div>
 </div>
 
