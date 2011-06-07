@@ -13,6 +13,17 @@
 
 <body>
 
+  <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->	
+  <div id="modal-wrapper">
+      <div id="modal-screen">
+          <div id="modal-content">
+    <%= link_to_function "cerrar_ventanita", "hide_modal('#needed_login')" %>
+    <%# render :partial => "/session/new"  %>
+              adsfsdf
+          </div>
+      </div>
+  </div>
+
 
 <div class="wrapper_with_wings">
 <div class="wrapper">
@@ -21,6 +32,15 @@
             <div id="logo">
             <%= link_to image_tag("wedding_logo1.png", :alt => "Tu boda"), root_path  %>
             </div>
+            <% if true # TODO no logado %>
+                <ul class="menu" id="head_menu_right">
+                    <li><%= link_to_function "Entra", "show_modal('#needed_login')" %></li>
+                    <li><%= link_to_function "Regístrate", "show_modal('#needed_login')" %></li>
+                </ul>
+            <% else %>
+              TODO mi login
+            <% end %> 
+            
         </div>
         <ul class="menu">
             <li>  

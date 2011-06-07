@@ -14,6 +14,7 @@ gem 'ruby_parser'
 
 gem 'mysql2', '< 0.3'
 
+gem "jquery-rails"
 
 gem 'rails_config'
 

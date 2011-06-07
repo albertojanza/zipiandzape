@@ -30,7 +30,8 @@ ul.menu li.select {height:32px;float: left; background:  white;-moz-border-radiu
 ul.menu li a {font-size: 0.923em;text-decoration:none; color: white; text-shadow: none ; font-weight:bold;} /* border-color: #FEC951;font-weight:bold;*/
 ul.menu li.select a {color:#f391b7 !important;} /* font-weight:bold;*/
 ul.menu li a:hover {color:yellow;}
-div#logo{}
+ul#head_menu_right{float:right; }
+div#logo{float:left}
 
 /*service*/
 div.container_service{min-height:450px;}
@@ -48,3 +49,32 @@ ul.bottom-options{ margin: 0px auto;padding-top:25px;}
 ul.bottom-options {float:left; height:25px;list-style-image: none; list-style-type: none; }
 ul.bottom-options li {height:100%;float: left; color:white; margin:0px; padding: 3px 5px;} /*margin: 10px 3px 0px 10px; padding: 0px;} */
 ul.bottom-options li a {font-size: 0.923em;text-decoration:none; color: #f391b7; text-shadow: none ; } /* font-weight:bold;border-color: #FEC951;font-weight:bold;*/
+
+
+/**********************************************
+  MODAL WINDOW
+**********************************************/
+/* Z-index of #mask must lower than #boxes .window */
+#modal-wrapper {display:none; height: 100%; position: absolute; width: 100%; z-index: 9999; background: transparent;}
+  /* the position fixed is necessary to avoid areas without modal when the user does scroll */
+#modal-screen { background-color:white; /*background-color: rgba(0, 0, 0, .4);*/ height: 100%; position: fixed; width: 100%;}
+#modal-content {
+left: 351px;
+right: 351px;
+
+  background: -webkit-gradient(linear,left top,left bottom,from(white),to(#EAF0F5));
+  background: -moz-linear-gradient(top,white,#FEEDF2);
+  background-color: white;
+  width: 563px;
+  margin: 180px auto 0;
+ position: absolute;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+height:300px;
+}
+
