@@ -7,7 +7,7 @@
 function show_modal(id) {
 
   jQuery('#modal-wrapper').fadeIn(100);	
-  jQuery('#modal-wrapper').fadeTo("slow",0.5);	
+  //jQuery('#modal-wrapper').fadeTo("slow",0.8);	
   //show_popup(id);
 
 }

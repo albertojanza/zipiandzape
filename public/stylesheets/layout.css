@@ -37,8 +37,6 @@ div#logo{float:left}
 div.container_service{min-height:450px;}
 div.service{padding:2px; }
 
-div.container_service_border_left{background:url('images/subheader_border_left.png'); height:900px; width:18px;float:left}
-div.container_service_border_right{background:url('images/subheader_border_right.png'); height:900px; width:18px;float:left}
 
 /* sidebar */
 div.advertisement{ width:300px; margin: 0px auto;margin-bottom:5px;}
@@ -57,14 +55,13 @@ ul.bottom-options li a {font-size: 0.923em;text-decoration:none; color: #f391b7;
 /* Z-index of #mask must lower than #boxes .window */
 #modal-wrapper {display:none; height: 100%; position: absolute; width: 100%; z-index: 9999; background: transparent;}
   /* the position fixed is necessary to avoid areas without modal when the user does scroll */
-#modal-screen { background-color:white; /*background-color: rgba(0, 0, 0, .4);*/ height: 100%; position: fixed; width: 100%;}
+#modal-screen { background-color: rgba(0, 0, 0, .2); height: 100%; position: fixed; width: 100%;}
 #modal-content {
 left: 351px;
 right: 351px;
-
+  background-color: white;
   background: -webkit-gradient(linear,left top,left bottom,from(white),to(#EAF0F5));
   background: -moz-linear-gradient(top,white,#FEEDF2);
-  background-color: white;
   width: 563px;
   margin: 180px auto 0;
  position: absolute;
