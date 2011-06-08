@@ -32,13 +32,14 @@
             <div id="logo">
             <%= link_to image_tag("wedding_logo1.png", :alt => "Tu boda"), root_path  %>
             </div>
-            <% if true # TODO no logado %>
+
+	    <% if !user_signed_in? %>
                 <ul class="menu" id="head_menu_right">
                     <li><%= link_to_function "Entra", "show_modal('#needed_login')" %></li>
                     <li><%= link_to_function "Regístrate", "show_modal('#needed_login')" %></li>
                 </ul>
             <% else %>
-              TODO mi login
+                 <%= link_to "Sign out", destroy_user_session_path %>
             <% end %> 
             
         </div>
